@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Madam Ji ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PASSWORD LOCK -->
+<div id="lockScreen" class="lock">
+  <h2>🔐 Enter Password</h2>
+  <p class="glow">Only for Madam Ji ❤️</p>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="unlock()">Unlock 💖</button>
+  <p id="error"></p>
+</div>
+
+<!-- MAIN WEBSITE -->
+<div id="main" style="display:none;">
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="hearts"></div>
+
+<div class="story">
+  <div id="content">
+    <h1 class="glow">Happy New Year Madam Ji 🎉</h1>
+    <p>You are the most beautiful part of my life ❤️</p>
+
+    <div class="cartoons">
+      <img src="images/hijab-girl.png">
+      <img src="images/boy-kurta.png">
+    </div>
+  </div>
+
+  <button onclick="nextSlide()">Next ➡️</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
