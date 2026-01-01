@@ -1,0 +1,72 @@
+body{
+margin:0;
+background:#0b0b1f;
+font-family:Poppins,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+overflow:hidden;
+color:white;
+}
+
+.story,.lock{
+background:#111;
+padding:25px;
+border-radius:25px;
+width:90%;
+max-width:380px;
+text-align:center;
+box-shadow:0 0 30px rgba(255,105,180,.4);
+animation:slideUp .6s;
+}
+
+button{
+padding:12px 30px;
+border:none;
+border-radius:25px;
+background:#ff4d88;
+color:white;
+font-size:16px;
+margin-top:15px;
+}
+
+input{
+padding:10px;
+border-radius:10px;
+border:none;
+width:80%;
+}
+
+.glow{
+animation:glow 2s infinite;
+}
+
+@keyframes glow{
+0%{text-shadow:0 0 5px pink;}
+50%{text-shadow:0 0 20px hotpink;}
+100%{text-shadow:0 0 5px pink;}
+}
+
+.cartoons img{
+width:120px;
+margin:10px;
+}
+
+.hearts::before{
+content:"💖 💕 💘 💓 💗";
+position:absolute;
+width:100%;
+height:100%;
+animation:float 10s linear infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(100vh);}
+100%{transform:translateY(-100vh);}
+}
+
+@keyframes slideUp{
+from{transform:translateY(100px);opacity:0;}
+to{transform:translateY(0);opacity:1;}
+}
